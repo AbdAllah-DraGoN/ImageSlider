@@ -5,6 +5,7 @@
 }
 body {
   font-family: Tahoma, Arial;
+      background-color: #012e40;
 }
 
 /* Medium */
@@ -72,6 +73,7 @@ body {
   z-index: 1;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 .slider-container img.active {
   opacity: 1;
