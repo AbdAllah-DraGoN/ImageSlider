@@ -17,24 +17,23 @@ nextBtn.onclick = nextSlide;
 prevBtn.onclick = prevSlide;
 
 // create ul & li & Appen it
-let paginEle = document.createElement("ul");
-paginEle.setAttribute("id", "pagination-ul");
+let pagUl = document.createElement("ul");
+pagUl.setAttribute("id", "pagination-ul");
 
 for (let i = 1; i <= slidesCount; i++) {
   let paginItem = document.createElement("li");
   paginItem.setAttribute("data-index", i);
   paginItem.appendChild(document.createTextNode(i));
-  paginEle.appendChild(paginItem);
+  pagUl.appendChild(paginItem);
 }
-document.getElementById("indicators").appendChild(paginEle);
+document.getElementById("indicators").appendChild(pagUl);
 
 let Bullets = Array.from(document.querySelectorAll("#pagination-ul li"));
 
-// Get the new Created Ul
-let pagUl = document.getElementById("pagination-ul");
+// ---
 theChecker();
+// Start Functions
 
-// Functions
 for (let i = 0; i < Bullets.length; i++) {
   Bullets[i].onclick = function () {
     currentSlide = parseInt(this.getAttribute("data-index"));
@@ -86,10 +85,6 @@ function theChecker() {
 }
 
 function ramoveAllActive() {
-  sliderImages.forEach(function (x) {
-    x.classList.remove("active");
-  });
-  Bullets.forEach(function (b) {
-    b.classList.remove("active");
-  });
+  sliderImages.forEach((x) => x.classList.remove("active"));
+  Bullets.forEach((b) => b.classList.remove("active"));
 }
