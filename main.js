@@ -86,10 +86,6 @@ function theChecker() {
 }
 
 function ramoveAllActive() {
-  sliderImages.forEach(function (x) {
-    x.classList.remove("active");
-  });
-  Bullets.forEach(function (b) {
-    b.classList.remove("active");
-  });
+  sliderImages.forEach((x) => x.classList.remove("active"));
+  Bullets.forEach((b) => b.classList.remove("active"));
 }
