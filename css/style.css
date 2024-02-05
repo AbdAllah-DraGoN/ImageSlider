@@ -4,8 +4,8 @@
   padding: 0;
 }
 body {
-  font-family: Tahoma, Arial;
-      background-color: #012e40;
+  font-family: "Poppins", sans-serif;
+  background: #012e40;
 }
 
 /* Medium */
@@ -144,3 +144,17 @@ body {
   color: #fff;
 }
 /* End Slider Controls */
+/* Start Copy Right */
+.copy-rihgt {
+  padding: 10px 20px;
+  margin: 50px auto;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  background: #f3f3f3;
+  border-radius: 24px;
+  color: #012e40;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/* End Copy Right */
